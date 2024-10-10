@@ -1,0 +1,61 @@
+{
+"data_dir":{
+	"path":								"/Users/benoit/Desktop/Pro/210526-fusion/data",
+	"HTS_gis_filename":					"EGT_lyon/doc/SIG/EDGT_AML2015_ZF_GT.TAB",
+	"HTS_men_faf_filename":				"EGT_lyon/csv/Fichiers_Standard_Face_a_face/lyon_2015_std_faf_men.csv",
+	"HTS_men_tel_filename":				"EGT_lyon/csv/Fichiers_Standard_Telephone/lyon_2015_std_tel_men.csv",
+	"HTS_per_faf_filename":				"EGT_lyon/csv/Fichiers_Standard_Face_a_face/lyon_2015_std_faf_pers.csv",
+	"HTS_per_tel_filename":				"EGT_lyon/csv/Fichiers_Standard_Telephone/lyon_2015_std_tel_pers.csv",
+	"HTS_depl_faf_filename":			"EGT_lyon/csv/Fichiers_Standard_Face_a_face/lyon_2015_std_faf_depl.csv",
+	"HTS_depl_tel_filename":			"EGT_lyon/csv/Fichiers_Standard_Telephone/lyon_2015_std_tel_depl.csv",
+	"odm_filename":  					"OD_matrix_lyon_unanon/OD_matrix_resident.csv",
+	"eqasim_per_filename":				"lyon_100pct/lyon_100pct_persons.csv",
+	"eqasim_trips_filename":			"lyon_100pct/lyon_100pct_trips.csv",
+	"eqasim_activities_filename":		"lyon_100pct/lyon_100pct_activities.csv",
+	"eqasim_households_filename":		"lyon_100pct/lyon_100pct_households.csv",
+	"eqasim_home_gdf_filename":			"lyon_100pct/lyon_100pct_homes.gpkg",
+	"eqasim_activities_gdf_filename":	"lyon_100pct/lyon_100pct_activities.gpkg",
+	"eqasim_trips_gdf_filename":		"lyon_100pct/lyon_100pct_trips.gpkg",
+	"iris_map":							"iris_lyon.csv",
+	"communes_map":						"communes_lyon.csv",
+	"commute_matrix":					"pendulaire_insee/base-flux-mobilite-domicile-lieu-travail-2017.csv",
+	"census":							"recensement_lyon/FD_INDCVIZE_2015.txt",
+	"mobpro":							"lil-1476/csv/fd_mobpro_2018.csv",
+	"mobsco":							"lil-1475/csv/fd_mobsco_2018.csv"
+	},
+	
+"outdata_dir":{
+	"path":									"/Users/benoit/Desktop/Pro/210526-fusion/outdata",
+	"gis_map_filename":						"synthpop/census_gis_map.csv",
+	"HTS_gis_filtered_filename":			"egt_lyon_pop_sample/zf_map.csv",
+	"HTS_filtered_filename":				"egt_lyon_pop_sample/egt_lyon_pop_sample.csv",
+	"HTS_depl_filtered_filename":			"egt_lyon_pop_sample/depl.csv",
+	"activity_chains_filename":				"synthpop/activity_chains.csv",
+	"transition_matrix_unanon_filename":	"iris_Mod_unanon.csv",
+	"transition_matrix_by_mode":			"trans_matrix_by_mode.csv",
+	"transition_matrix_by_dist_filename":	"trans_matrix_by_distbin.csv",
+	"vol_by_dayhour_complete_filename":		"vol_by_dayhour_complete.csv",
+	"vol_by_dayhour_filtered_filename":		"vol_by_dayhour_filtered.csv",
+	"trips_by_hour_filename":				"trips_by_hour_odm_unanon.csv",
+	"socioeco_marginals_filename":          "synthpop/marginals.csv",
+	"synthpop_filename":					"synthpop/census_pop_sample.csv",
+	"synthpop_statmatch_filename":			"synthpop/synthpop_statmatch.csv",
+	"synthpop_rescaled_filename":			"synthpop/synthpop_statmatch_rescaleipu.csv",
+	"eqasim_activities_on_gis_filename":	"eqasim/lyon_100pct_activities_on_gis.csv",
+	"eqasim_trips_on_gis_filename":			"eqasim/lyon_100pct_trips_on_gis.csv"
+	},
+"outfig_dir":			"/Users/benoit/Desktop",
+
+"census_sample_frac":	1,
+"timesteps":			[ 0,  2,  5,  7,  8,  9, 10, 12, 14, 16, 17, 18, 19, 20, 22],
+"distbin_limits":		[0, 200, 500, 1000, 3000, 5000, 7000, 9000],
+"per_cols_rescaling":	["gender", "has_car", "occupation", "age"],
+"age_bins":				[0, 18, 30, 60, 100],
+"nb_warmup_mcmc":       [0, 1, 50, 200, 1000, 1000, 1000, 1000, 1000, 1000, 1000],
+"nb_cooldown_mcmc":     [0, 0, 10, 50, 1000, 1000, 1000, 1000, 1000, 1000, 1000],
+"viz_colors":{
+	"HTS":		[0.9411764705882353, 0.8941176470588236, 0.25882352941176473],
+	"eqasim":	[0.18823529411764706, 0.7450980392156863, 0.9490196078431372],
+	"orange":	[0.9450980392156862, 0.6039215686274509, 0.0]
+	}
+}
